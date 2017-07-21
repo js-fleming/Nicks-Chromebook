@@ -1,0 +1,16 @@
+{
+	"manifest_version": 2,
+	"name": "Nick's Chromebook",
+	"version": "1.0",
+	"description": "Replaces the text 'Chromebook' with 'Nick's Chromebook'.",
+    "author": "Legit.Co.",
+    "content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
+
